@@ -1,0 +1,136 @@
+@font-face {
+    font-family: rubrik;
+    src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: rubrik;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.container {
+    width: 1349px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #2e2d2d;
+    padding-top: 140px;
+}
+
+.cards {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 350px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    border: none;
+    background-color: #ffffff;
+    transition: all linear 0.3s;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.sec1 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: all linear 0.3s;
+    background-color: #343434;
+}
+
+.sec1 h1 {
+    color: #ffffff;
+    opacity: 30%;
+    transition: all 0.4s linear;
+}
+
+.sec1 img {
+    width: 80px;
+    transition: 0.5s;
+    opacity: 30%;
+}
+
+.sec2 {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: none;
+    background-color: aliceblue;
+    transition: all linear 2s;
+}
+
+.sec2 p {
+    /* display: none; */
+    text-align: justify;
+    transition: all linear 1s;
+}
+
+.sec2 button {
+    width: 110px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #343434;
+    transition: all linear 0.3s;
+}
+
+.card:hover {
+    cursor: pointer;
+    margin-top: -75px;
+    height: 350px;
+}
+
+.card:hover .sec1 {
+    background-color: #FF0459;
+    height: 45%;
+}
+
+.card:hover .sec1 img {
+    transform: rotate(-180deg);
+    opacity: 100%;
+}
+
+.card:hover .sec1 h1 {
+    opacity: 100%;
+}
+
+.card:hover .sec2 {
+    display: block;
+}
+
+.sec2 button:hover {
+    cursor: pointer;
+    background-color: #343434;
+    border-color: #343434;
+    color: #ffffff;
+}
+
+.copy {
+    margin-left: 550px;
+    color: #fff;
+    font-weight: 100;
+}
